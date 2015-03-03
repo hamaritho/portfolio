@@ -1,0 +1,92 @@
+doctype html
+html
+	head
+		include ./includes/jade/head.jade
+		script(type="text/javascript",src="js/coursework-mini.js")
+		script(type="text/javascript",src="js/lightbox-mini.js")
+
+	body
+		header
+			include ./includes/jade/header.jade
+			include ./includes/jade/nav3.jade
+		main
+			section.toc
+				h2 Table of Contents
+				ol
+					li.robotics: a Introduction to Robotics Project
+					li.mts: a MyThinkSpace
+					li.graphics: a Computer Graphics Project
+					
+
+			section.robotics 
+				include:md ./includes/md/robotics.md
+				h3 Media/Project Resources
+				p.repo-title Project Demo
+				figure.full
+					| <iframe width="853" height="480" src="https://www.youtube.com/embed/sPzPW2FxHAE?rel=0" frameborder="0" allowfullscreen></iframe>
+					figcaption A demo of our robotics project.
+				
+				p.repo-title Project Images
+				.light-box-repository.parent
+					a(href="resources/robotics/images/lightbox/full/Cup_Tracking.png").light-box-image: img(src="resources/robotics/images/lightbox/prev/Cup_Tracking.png")
+					a(href="resources/robotics/images/lightbox/full/positioning.jpg").light-box-image: img(src="resources/robotics/images/lightbox/prev/positioning.jpg")
+					a(href="resources/robotics/images/lightbox/full/screen.png").light-box-image: img(src="resources/robotics/images/lightbox/prev/screen.png")
+				include ./includes/jade/backtotop.jade
+
+			section.mts
+				include:md ./includes/md/mythinkspace.md
+				h3 Media/Project Resources
+				
+				p.repo-title MyThinkSpace Screenshots
+				.light-box-repository.parent
+					a(href="resources/mts/images/lightbox/full/mvp3-1.png").light-box-image: img(src="resources/mts/images/lightbox/prev/mvp3-1.png")
+					a(href="resources/mts/images/lightbox/full/mvp3-2.png").light-box-image: img(src="resources/mts/images/lightbox/prev/mvp3-2.png")
+					a(href="resources/mts/images/lightbox/full/mvp3-3.png").light-box-image: img(src="resources/mts/images/lightbox/prev/mvp3-3.png")
+				
+				p.repo-title Downloads and Links
+				.dls.parent
+					figure
+						a(href="resources/mts/pdfs/invalidationResults.pdf"): img(src="resources/mts/images/invalid.png")
+						figcaption Download our first invalidation interview results.
+					figure
+						a(href="resources/mts/pdfs/ExecutiveSummary.pdf"): img(src="resources/mts/images/exec.png")
+						figcaption Download our Executive Summary.
+					figure
+						a(href="http://prezi.com/2gutwm3h0z-0/?utm_campaign=share&utm_medium=copy&rc=ex0share" target="_blank"): img(src="resources/mts/images/prezi.png")
+						figcaption View the pitch from the CU New Venture Challenge.
+					figure
+						a(href="http://mythinkspaceapp.blogspot.com/p/about.html" target="_blank"): img(src="resources/mts/images/site.png")
+						figcaption View the official website for MyThinkSpace.
+				include ./includes/jade/backtotop.jade
+
+			section.graphics
+				include:md ./includes/md/graph.md
+				h3 Media/Project Resources
+				figure.full
+					| <iframe width="853" height="480" src="https://www.youtube.com/embed/_cOBykF9fuU?rel=0" frameborder="0" allowfullscreen></iframe>
+					figcaption A video of my project. The resources used for this project:
+						ul
+							li: a(href="http://www.blendswap.com/blends/view/70187",target="_blank") Refrigerator
+							li: a(href="http://www.blendswap.com/blends/view/68972",target="_blank") Oven
+							li: a(href="http://www.blendswap.com/blends/view/63306",target="_blank") Television
+							li: a(href="http://www.blendswap.com/blends/view/66678",target="_blank") Table and Chairs
+							li: a(href="http://www.blendswap.com/blends/view/5199",target="_blank") Couch
+							li: a(href="http://www.blendswap.com/blends/view/62855",target="_blank") Bed
+							li: a(href="http://allroundnews.com/seamless-wood-textures-free-for-designers/seamless-wood-texture-free-35/",target="_blank") Wood Texture
+							li: a(href="http://hhh316.deviantart.com/art/Seamless-Carpet-Texture-270563565",target="_blank") Carpet Texture
+							li: a(href="http://seamless-pixels.blogspot.com/2012_10_01_archive.html",target="_blank") Wall Texture
+							li: a(href="http://hhh316.deviantart.com/art/Seamless-metal-texture-182943398",target="_blank") Metal Texture
+							li: a(href="http://www.samuriah.com/index.php?main_page=product_info&products_id=109",target="_blank") Countertop Texture
+							li: a(href="http://www.aoaforums.com/forum/digital-image-photo-video-audio-editing/48795-camoflage-seamless-texture-maps-free-use.html",target="_blank") Mattress Cover Texture
+							li: a(href="http://www.123rf.com/photo_16163002_white-canvas-texture-background-with-horizontal-striips-pattern.html",target="_blank") Pillow Texture
+							li: a(href="http://seamless-pixels.blogspot.com/2012_11_01_archive.html",target="_blank") Blanket Texture
+							li: a(href="http://www.filterforge.com/filters/5217.html",target="_blank") Couch Texture
+							li: a(href="http://www.psdgraphics.com/textures/metal-textures/",target="_blank") Refrigerator Texture
+							li: a(href="http://www.123rf.com/photo_7450896_orange-texture-of-a-lampshade.html",target="_blank") Lamp Texture
+
+				include ./includes/jade/backtotop.jade
+
+			include ./includes/jade/lightbox.jade
+
+		footer
+			include ./includes/jade/footer.jade

@@ -1,0 +1,489 @@
+
+//COLORS------------------------------------------------------------------------
+@base: black;
+@accent: #BEEB9F;
+@link: #FF6138;
+@defaultFontSize: 16px;
+@defaultFontSizeRem: 1.6rem;
+
+@font-face {
+	font-family: "Source Sans Pro";
+
+	src: url("../resources/SourceSansPro-Regular.ttf");
+
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Source Sans Pro";
+
+	src: url("../resources/SourceSansPro-Light.ttf");
+
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Source Sans Pro";
+
+	src: url("../resources/SourceSansPro-ExtraLight.ttf");
+
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Source Sans Pro";
+
+	src: url("../resources/SourceSansPro-Bold.ttf");
+
+	font-weight: 700;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+//Tags---------------------------------
+html {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 62.5%;
+}
+
+body {
+	width: 100%;
+}
+
+header {
+	font-weight: 300;
+	font-size: @defaultFontSize + 4;
+	font-size: @defaultFontSizeRem + 0.4;
+	a {
+		color: @base;
+	}
+}
+
+main {
+	font-size: @defaultFontSize;
+	font-size: @defaultFontSizeRem;
+	padding: 0 10%;
+	margin-top: 20px;
+	position: relative;
+}
+
+footer {
+	font-weight: 200;
+	font-size: @defaultFontSize;
+	font-size: @defaultFontSizeRem;
+	text-align: center;
+	clear: both;
+}
+
+h1 {
+	font-weight: 200;
+}
+
+h2 {
+	margin-top: 10px;
+}
+
+h3 {
+	margin-top: 10px;
+}
+
+p {
+	padding: 10px 0;
+}
+
+a {
+	color: @link;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+ol, ul {
+	margin: 10px 20px;
+}
+
+section {
+	margin-top: 30px;
+	clear: both;
+}
+
+ul {
+	list-style-type: none;
+	li {
+		&:before {
+			content: " - ";
+		}
+	}
+}
+
+figure {
+	position: relative;
+	border: 2px solid @accent;
+	margin: 10px;
+	padding: 2px;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+figcaption {
+	font-style: italic;
+	text-align: center;
+	margin: 10px;
+	//border-top: 2px solid @accent;
+}
+
+iframe {
+	display: block;
+	margin: 10px auto;
+}
+
+//IDs----------------------------------
+#topnav {
+	background-color: @accent;
+	width: 80%;
+	padding: 0 10%;
+}
+
+#subnav {
+	background-color: @base;
+	width: 80%;
+	padding: 10px 10% 0 10%;
+	align-items: baseline;
+	min-height: 0;
+	a:not(.active) {
+		color: @accent;
+	}
+}
+
+#mainlinks {
+	width: 33%;
+}
+
+//Classes------------------------------
+.parent {
+	position: relative;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	align-items: center;
+	-webkit-align-items: center;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	min-height: 60px;
+}
+
+.child {
+}
+
+.active {
+	background-color: white;
+	padding: 5px 5px 0 5px;
+	color: black;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+}
+
+.toc {
+	background-color: lighten(@accent, 20%);
+	border: 3px solid @accent;
+	display: inline-block;
+	padding: 10px;
+}
+
+.backToTop {
+	text-align: right;
+	clear: both;
+}
+
+.full {
+	max-width: 100%;
+	margin: 0 auto;
+	border: none;
+	padding: 10px;
+
+}
+
+.left {
+	float: left;
+	max-width: 50%;
+}
+
+.right {
+	float: right;
+	max-width: 50%;
+}
+
+.small {
+	max-width: 25%;
+}
+
+
+//RESUME STUFF-------------------------
+.section-title {
+	float: left;
+	width: 15%;
+	margin: 10px 0;
+	padding: 1% 5%;
+	text-align: center;
+}
+
+.section-content {
+	float: left;
+	width: 72%;
+	border-left: 0.2em solid @accent;
+	margin: 10px 0;
+	padding: 1% 1%;
+}
+
+.item-title {
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	align-items: baseline;
+	-webkit-align-items: baseline;
+	min-height: 0;
+	border-bottom: 0.2em solid @accent;
+}
+
+.item-content {
+	margin-bottom: 30px;
+
+	ul {
+		margin-top: 10px;
+	}
+	
+
+	li > ul {
+		margin-top: 2px;
+	}
+}
+
+//LIGHTBOX STUFF-----------------------
+.light-box-repository {
+	
+	width: 100%;
+	.full;
+	margin: 10px 0px;
+	//border: 2px dashed @accent;
+	min-height: 0;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	//background-color: lighten(@accent, 15%);
+}
+
+.light-box-image {
+	flex-basis: 23%;
+	-webkit-flex-basis: 23%;
+	margin: 1%;
+
+	img {
+		width: 100%;
+	}
+}
+
+.lightbox {
+	z-index: 2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	border: none;
+	margin: 0;
+	color: white;
+	font-size: @defaultFontSize;
+	font-size: @defaultFontSizeRem;
+
+	img {
+		position: relative;
+		width: auto;
+		max-width: 75%;
+		max-height: 80%;
+		margin: 0;
+		border: 10px solid white;
+	}
+
+	figcaption {
+		border: none;
+		color: black;
+		background-color: white;
+		margin: 0 auto;
+		max-width: 75%;
+		max-height: 10%;
+		padding: 5px;
+	}
+
+	p {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.repo-title {
+	border-bottom: 2px solid @accent;
+}
+
+.dls {
+	.light-box-repository;
+
+	figure {
+		flex-basis: 20%;
+		background-color: white;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+//SMART PHONE LAYOUT-------------------
+@media only screen and (min-width: 320px) and (orientation: portrait)
+{
+	html {
+		font-size: 180%;
+	}
+
+	p {
+		margin: 50px 0;
+	}
+
+	.parent {
+		display: block;
+		a {
+			display: block;
+		}
+	}
+
+	#topnav {
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	#mainlinks {
+		display: table;
+		width: 100%;
+		.child {
+			display: table-cell;
+			width: 33%;
+		}
+	}
+
+	#subnav {
+		text-align: center;
+		width: 100%;
+		padding: 0;
+	}
+
+	.active {
+		background-color: @base;
+		padding: 0;
+		font-weight: bold;
+		color: @accent;
+	}
+
+	.sep {
+		display: none !important;
+	}
+
+	.section-title {
+		display: block;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.section-content {
+		width: 100%;
+		display: block;
+		border-left: 0.2em solid @accent;
+		margin-bottom: 10px;
+		padding: 0 1%;
+	}
+
+	.left, .right {
+		.full;
+	}
+}
+
+//Small Screen Layout
+@media only screen and (max-width: 768px) {
+	html {
+		font-size: 62.5%;
+	}
+
+	p {
+		margin: 5px 0;
+	}
+
+	.parent {
+		display: block;
+		a {
+			display: block;
+		}
+	}
+
+	#topnav {
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	#mainlinks {
+		display: table;
+		width: 100%;
+		.child {
+			display: table-cell;
+			width: 33%;
+		}
+	}
+
+	#subnav {
+		text-align: center;
+		width: 100%;
+		padding: 0;
+	}
+
+	.active {
+		background-color: @base;
+		padding: 0;
+		font-weight: bold;
+		color: @accent;
+	}
+
+	.sep {
+		display: none !important;
+	}
+
+	.section-title {
+		display: block;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.section-content {
+		width: 100%;
+		display: block;
+		border-left: 0.2em solid @accent;
+		margin-bottom: 10px;
+		padding: 0 1%;
+	}
+}
+

@@ -1,0 +1,69 @@
+doctype html
+html
+	head
+		include ./includes/jade/head.jade
+		script(type="text/javascript",src="js/lightbox-mini.js")
+	body
+		header
+			include ./includes/jade/header.jade
+			include ./includes/jade/nav3.jade
+		main
+			section.toc
+				h2 Table of Contents
+				ol
+					li.tsrco: a The Space Research Company
+					li.if: a interactiveFiction
+					li.freshproj: a Freshman Design Project
+
+			section.tsrco
+				include:md ./includes/md/tsrco.md
+				h3 Media/Project Resources
+				include ./includes/jade/backtotop.jade
+
+			section.if
+				include:md ./includes/md/interactivefiction.md
+				h3 Media/Project Resources
+				p.repo-title Downloads and Links
+				.dls.parent
+					figure
+						a(href="http://interactiveFiction.hannah-thomas.com",target="_blank"): img(src="resources/intfic/images/Home.png")
+						figcaption Play interactiveFiction.
+					figure
+						a(href="resources/intfic/pdfs/3308proposal.pdf"): img(src="resources/intfic/images/proposal.png")
+						figcaption Download the proposal for interactiveFiction.
+					figure
+						a(href="resources/intfic/pdfs/Documentation.pdf"): img(src="resources/intfic/images/superscreen.png")
+						figcaption Download the documentation/final write-up for interactiveFiction.
+				include ./includes/jade/backtotop.jade	
+
+			section.freshproj
+				include:md ./includes/md/freshmanproject.md
+				h3 Media/Project Resources
+				p.repo-title Video Demo
+				figure.full
+					| <iframe width="853" height="480" src="https://www.youtube.com/embed/T8TAb5Iy4p?rel=0" frameborder="0" allowfullscreen></iframe>
+					figcaption A demo of the wind turbine, unattached to its pump.
+				p.repo-title Wind 4 Water Development
+				.light-box-repository.parent
+					a(href="resources/freshproj/images/lightbox/full/everyonebase.JPG").light-box-image: img(src="resources/freshproj/images/lightbox/prev/everyonebase.JPG")
+					a(href="resources/freshproj/images/lightbox/full/hannahgarage.JPG").light-box-image: img(src="resources/freshproj/images/lightbox/prev/hannahgarage.JPG")
+					a(href="resources/freshproj/images/lightbox/full/kennygears.JPG").light-box-image: img(src="resources/freshproj/images/lightbox/prev/kennygears.JPG")
+					a(href="resources/freshproj/images/lightbox/full/turbine.JPG").light-box-image: img(src="resources/freshproj/images/lightbox/prev/turbine.JPG")
+					a(href="resources/freshproj/images/lightbox/full/poster.JPG").light-box-image: img(src="resources/freshproj/images/lightbox/prev/poster.JPG")
+					a(href="resources/freshproj/images/lightbox/full/medesignexpo.JPG").light-box-image: img(src="resources/freshproj/images/lightbox/prev/medesignexpo.JPG")
+					a(href="resources/freshproj/images/lightbox/full/everyone.JPG").light-box-image: img(src="resources/freshproj/images/lightbox/prev/everyone.JPG")
+				
+				p.repo-title Downloads and Links
+				.dls.parent
+					figure
+						a(href="resources/freshproj/pdfs/wind4water.pdf"): img(src="resources/freshproj/images/pres.jpg")
+						figcaption Download of the full presentation from the Design Expo.
+					figure
+						a(href="http://prezi.com/gpahcvgn_q4j/?utm_campaign=share&utm_medium=copy&rc=ex0share",target="_blank"): img(src="resources/freshproj/images/prezi.png")
+						figcaption View the original Prezi (slightly outdated).
+				include ./includes/jade/backtotop.jade
+	
+		footer
+			include ./includes/jade/footer.jade
+
+		include ./includes/jade/lightbox.jade
