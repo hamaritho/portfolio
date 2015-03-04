@@ -1,1 +1,3 @@
 ##Markit On Demand &mdash; Jun 2014-Aug 2014
+
+Markit On Demand is a consulting company specializing in web development for financial institutions. As an intern I was assigned an in-house project: to make a website for the Design Team. The website functioned mostly as a well-designed wiki with a superior What-You-See-Is-What-You-Get(WYSIWYG) editor. I worked with a fellow intern on the project. We decided to use the Content Management System(CMS) Drupal.

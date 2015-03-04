@@ -8,8 +8,10 @@ $(document).ready(function() {
         var desc = $(this).attr('title');
 
         $(".lightbox img").attr('src', pic);
-        $(".lightbox .desc").html(desc);
-
+        if(desc != undefined)
+        {
+            $(".lightbox figcaption").html("<div class='desc'>" + desc + "</div>");
+        }
         $(".lightbox").fadeIn(1000);
     });
 
