@@ -8,20 +8,20 @@
 
 In my freshman year I took GEEN 1400, Engineering Projects. For this class students form groups and then design a project to be presented in a Design Exposition at the end of the semester.
 
-My class was given free reign in choosing and designing a project, so long as it had some sort of impact on the world. So we began by thinking about a need instead of a product. One of the most basic needs is water, and in third-world countries, it can be difficult to fetch. With this in mind, we designed a wind-powered water pump.
+My class was given free reign in choosing and designing a project as long as it had some impact/greater purpose. So we began by thinking about a need instead of a product. One of the most basic needs is water, and in third-world countries, it can be difficult to fetch. With this in mind, we designed a wind-powered water pump.
 
 <figure class="left small">
 <img src="resources/freshproj/images/turbines.jpg">
 <figcaption>Different styles of wind turbines.</figcaption>
 </figure>
 
-Before we could design the pump we had to research wind turbines: what turbines are the most efficient, require the least amount of effort to begin spinning, can self-start, etc. We discovered that there are two major types of wind turbines: vertical and horizontal. 
+Before we could design the pump we had to research wind turbines: which turbines are the most efficient, which require the least amount of effort to begin spinning, which can self-start, etc. We discovered that there are two major types of wind turbines: vertical and horizontal. 
 
-At first I found the terminology confusing. The blades of a classic turbine &mdash; like a pinwheel &mdash; struck me as "vertical." After all, the blades moved vertically through the air. Likewise, the less-common vertical turbines&rsquo; blades moved horizontally through space. But the name of the turbine comes from the *axis* of the turbine, not the blades.
+At first I found the terminology confusing. The blades of a classic turbine &mdash; like a pinwheel &mdash; struck me as &ldquo;vertical.&rdquo; After all, the blades moved vertically through the air. Likewise, the less-common vertical turbines&rsquo; blades moved horizontally through space. But the name of the turbine comes from the *axis* of the turbine, not the blades.
 
 Horizontal wind turbines had a horizontal axis. The blades spun vertically around this axis. We discovered that these turbines are commercially more widespread, but usually had to be started by a generator before they could move freely in the wind. They also had to be positioned correctly to catch the wind. If the wind blew the wrong direction, the turbine was useless.
 
-Vertical wind turbines, therefore, had a vertical axis. The blades spun horizontally around this axis. We learned that these turbines are more commonly used by households or smaller companies, most could be started using the wind alone, and would work for any wind direction. They were also safer for the animal life, since it is much easier to avoid a large solid object than constantly-moving spinning blades.
+Vertical wind turbines had a vertical axis. The blades spun horizontally around this axis. We learned that these turbines are more commonly used by households or smaller companies, most could be started using the wind alone, and would work for any wind direction. They were also safer for the animal life, since it is much easier to avoid a large solid object than constantly-moving spinning blades.
 
 We immediately saw the benefit of the vertical wind turbines and decided to use them for our project. However, further research revealed that there are two major types of vertical wind turbines: Savonius and Darrieus.
 
@@ -41,7 +41,7 @@ After comparing all of our options, we opted for a savonius-style turbine and a 
 <figcaption>The initial design of our wind turbine.</figcaption>
 </figure>
 
-We took a very crude sketch then used SolidWorks to design our turbine. Since the goal was to design a low-cost water pumping system, we decided to use recycled parts in the design. We used bike wheels as the "base" for the blades and later decided to make the blades out of a storage shed door. We also looked at buying as many materials as possible at second-hand shops. We did, however, decide to buy a water pump; it was easily the most expensive part of our project, but well worth the cost.
+We took a very crude sketch then used SolidWorks to design our turbine. Since the goal was to design a low-cost water pumping system, we decided to use recycled parts in the design. We used bike wheels as the &ldquo;base&rdquo; for the blades and later decided to make the blades out of a storage shed door. We also looked at buying as many materials as possible at second-hand shops. We did, however, decide to buy a water pump; it was easily the most expensive part of our project, but well worth the cost.
 
 Based on initial designs, we used Betz&rsquo;s Law to calculate the amount of power we could generate at 100% efficiency, and arrived at 1,072 watts. We then calculated a maximum and minimum torque for our turbine. Maximum torque we calculated to be 3.84 lb-ft, and minimum torque was 0.24 lb-ft.
 
@@ -68,7 +68,7 @@ When we had completely finished with our creation, we realized that our Bill of 
 
 Many of our design issues could have been avoided by simply adding more iterations to our project. In essence, our final result was really our first prototype. We never tried making our design on a smaller scale and were not able to test it in the wind until the day of the Exposition.
 
-Going through this process, and realizing our error, helped me to better appreciate the art of engineering as well as the science of it. I learned the value of making small "throw-aways" that could test designs easily without expending a lot of effort. I would apply this principle in a later class, Startup Essentials. It also taught me the importance of testing often as every given opportunity, even if the entire project is not done.
+Going through this process, and realizing our error, helped me to better appreciate the art of engineering as well as the science of it. I learned the value of making small &ldquo;throw-aways&rdquo; that could test designs easily without expending a lot of effort. I would apply this principle in a later class, Startup Essentials. It also taught me the importance of testing often as every given opportunity, even if the entire project is not done.
 
 This was also my first major group project. One of the unique things about group projects with faraway deadlines is that you have complete control over your learning. Everything about this project we had to research ourselves; very little fundamental engineering concepts were taught in the class. The class focused mostly on what it means to work on a project and to work in a group. As a computer scientist, I found this especially challenging. While many of the students in the class were mechanical engineers and had some experience with the concepts necessary to the class, I was mostly in the dark. Not only that, but I was very uninterested in building anything.
 
