@@ -1,6 +1,6 @@
 ##Introduction to Robotics &mdash; Nov 2014-Dec 2014
 
-<figure>
+<figure class="full">
 <img src="http://correll.cs.colorado.edu/wp-content/uploads/rethink-robotics-baxter-worker-robot.jpg">
 <figcaption>Baxter the Robot. Image from <a href="http://correll.cs.colorado.edu/wp-content/uploads/rethink-robotics-baxter-worker-robot.jpg">here.</a>
 </figure>
