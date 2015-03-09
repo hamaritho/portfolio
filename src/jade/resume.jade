@@ -7,14 +7,18 @@ html
 		header
 			include ./includes/jade/header.jade
 			include ./includes/jade/nav1.jade
-		main
+		main			
 			section
 				.section-title
-					h2 Objective
+					h2 Download
 				.section-content
 					.content-item
+						.item-title.parent
+							h3 One Page Resume
 						.item-content
-							p Seeking a full-time position focused on game and app design and development for children starting mid-June 2015 using my computer science and/or design skills.
+							ul
+								li Download my resume <a href="resources/resume/pdfs/Thomas_Hannah_Resume.pdf">here</a>.
+
 			section
 				.section-title
 					h2 Education
@@ -44,7 +48,7 @@ html
 							h3 Jun 2014-Aug 2014
 						.item-content
 							ul
-								li Designed and implemented a website for the Design Team to catalogue resources and pool knowledge.
+								li Designed and implemented a website for the Design Team to catalogue resources and pool knowledge, reducing training time for new hires.
 					.content-item
 						.item-title.parent
 							h3 Lexmark International, Inc.
@@ -61,14 +65,22 @@ html
 				.section-content
 					.content-item
 						.item-title.parent
-							h3 NCAR Scientific Data Workflow Web application
+							h3 NCAR Scientific Data Workflow Web Application
 							h3 Aug 2014-Present
 						.item-content
 							ul
 								li Building a web application to easily subset and analyze NARCCAP climate data.
 					.content-item
 						.item-title.parent
-							h3 interactiveFiction
+							h3: a(href="designprojects.html") The Space Research Company
+							h3 Jan 2015-Apr 2015
+						.item-content
+							ul
+								li Designed logos and branding resources for the company.
+								li Designed and delivered a promotional video for the company.
+					.content-item
+						.item-title.parent
+							h3: a(href="designprojects.html") interactiveFiction
 							h3 Oct 2012-Dec 2012
 						.item-content
 							ul
