@@ -1,5 +1,3 @@
-*.html
-*.css
 .DS_STORE
 _site/
 node_modules/
