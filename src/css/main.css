@@ -1,6 +1,7 @@
 html {
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
+  color: #2e4052;
 }
 
 body {
@@ -11,12 +12,27 @@ body {
   padding: 0% 2%;
 }
 
+a {
+  color: #6290c3;
+}
+
+a:hover {
+  color: #90c2fb;
+}
+
+a:active {
+  color: #f19a3e;
+}
+
+a:visited {
+  color: #2e4052;
+}
+
 header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  background-color: lightgrey;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid #f19a3e;
   padding: 0% 2%;
 }
 
@@ -27,7 +43,8 @@ header * {
 section {
   margin: 2.5%;
   padding: 1% 2% 1% 2%;
-  background-color: rgb(240, 240, 240);
+  border: 2px solid #f19a3e;
+  border-radius: 20px;
 }
 
 section h2 {
@@ -58,21 +75,23 @@ table {
   border-collapse: collapse;
   background-color: white;
   margin: 1%;
+  border: 1px solid #2e4052;
 }
 
 th {
-  background-color: grey;
+  background-color: #2e4052;
   color: white;
 }
 
 tr:nth-child(even) {
-  background-color: lightslategray;
+  background-color: #b0c4b1;
 }
 
 th,
 td {
   padding: 5px;
   text-align: center;
+  border-right: 1px solid #2e4052;
 }
 
 section#about {
