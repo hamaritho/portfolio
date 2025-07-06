@@ -1,0 +1,111 @@
+---
+layout: mylayout.njk
+title: Home
+---
+
+{% section 'about' %}
+
+  <div>
+    <p>
+      Hello! I'm a software engineer based in the Boston area. I work for <a href='https://www.athenahealth.com/'>athenaHealth</a>
+      on software for Providers and Billing Staff to better serve their patients.
+    </p>
+
+    <p>
+      I discovered programming in late high school, and found it clicked with me as a natural puzzle-solver. I enjoy tinkering
+      and learning new things, and software engineering lets me do both!
+    </p>
+  </div>
+
+{% endsection %} 
+
+{% section '','Experience' %}
+    {% item 'athenaHealth','September 2015 - Present' %}
+      <p>Full-stack developer creating workflows for patient registration at health institutions.</p>
+
+      <ul>
+      <li><b>May 2024 - Present</b> Principle Member of Technical Staff
+        <ul>
+          <li>Technical Lead for 2 teams</li>
+          <li>I plan the technical design for new features in a legacy codebase, with an eye towards modernization of technology when possible.</li>
+        </ul>
+      </li>
+        <li><b>Feb 2019 - May 2024</b> Lead Member of Technical Staff</li>
+        <li><b>Jul 2017 - Feb 2019</b> Senior Member of Technical Staff </li>
+        <li><b>Sep 2015 - Jul 2017</b> Member of Technical Staff </li>
+      </ul>
+    {% enditem %}
+
+    {% item 'Markit On Demand','June 2014 - August 2014' %}
+      <ul>
+        <li>Designed and implemented a website for the Design Team to catalogue resources and pool knowledge, reducing training time for new hires.</li>
+      </ul>
+    {% enditem %}
+
+    {% item 'Lexmark International, Inc.','June 2013 - August 2013' %}
+      <ul>
+        <li>Wrote a program to filter printer logs by various criterion (name, application, date range).</li>
+        <li>Wrote auto-configuration software to create a Kerberos Configuration File for a printer.</li>
+        <li>Implemented a web app for the autoconfiguration software.</li>
+      </ul>
+    {% enditem %}
+{% endsection %}
+
+{% section '','Education' %}
+  {% item 'University of Colorado Boulder','August 2011 - May 2015' %}
+    <ul>
+    <li>B.S. Computer Science</li>
+    <li>Emphasis: Software Engineering</li>
+    <li>Technology, Arts, and Media Minor</li>
+    <li>GPA: 3.913</li>
+    <li><b>Awards and Memberships</b>
+      <ul>
+        <li>Dean's List(Fall 2011-Present)</li>
+        <li>Society of Women Engineers</li>
+        <li>Engineering Honors Program</li>
+      </ul>
+    </li>
+    </ul>
+  {% enditem %}
+{% endsection %}
+
+{% section '','Skills' %}
+  {% item 'Programming' %}
+    <ul>
+      <li>Perl</li>
+      <li>Java</li>
+    </ul>
+  {% enditem %}
+
+  {% item 'Web Development' %}
+    <table>
+      <tr>
+        <th> HTML </th>
+        <th> CSS </th>
+        <th> Javascript </th>
+      </tr>
+      <tr>
+        <td>HTML5</td>
+        <td>Less</td>
+        <td>Node</td>
+      </tr>
+      <tr>
+        <td>Markdown</td>
+        <td>Sass</td>
+        <td>React</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>jQuery</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>Styled-Components</td>
+      </tr>
+    </table>
+
+  {% enditem %}
+
+{% endsection %}
